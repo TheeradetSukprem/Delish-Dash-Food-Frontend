@@ -39,6 +39,14 @@
   border-radius: 50px;
 }
 
+button {
+  cursor: pointer;
+}
+
+/* button:active {
+  animation: fadeIn 1s;
+} */
+
 @media (max-width:1050px) {
   .header-contents {
     max-width: 45%;
