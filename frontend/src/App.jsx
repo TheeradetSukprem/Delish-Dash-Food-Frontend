@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import { Routes,Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
-import Place from './pages/PlaceOrder/Place'
+import Place from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 
@@ -18,8 +18,8 @@ const [showLogin,setShowLogin] = useState(false)
       <Navbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/Cart' element={<Cart/>} />
-          <Route path='/Order' element={<Place/>} />
+          <Route path='/cart' element={<Cart/>} />
+          <Route path='/order' element={<Place/>} />
         </Routes>
     </div>
     <Footer />
